@@ -4,27 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de contato</title>
+    <title>DEVs Cadastration Formulary</title>
 </head>
 <body>
     
-    <form action=""></form>
+    <div>
+        <h1>DEVs Cadastration Formulary</h1>
+        <p>Complete your informations</p>
+        <br>
+    </div>
+
+    <form>
         <fieldset>
-            <legend>Contato</legend>
-            <label for="name">Name:</label>
-            <br>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
-            <br><br>
+            <div>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <br><br>
+            </div>
+
+            <div>
+                <label for="lastName">Last name:</label>
+                <br>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+                <br><br>
+            </div>
+            
+        </fieldset>
+
+        <br>
+
+        <div>
             <label for="email">E-mail:</label>
             <br>
             <input type="email" name="email" id="email" placeholder="Enter your email">
             <br><br>
-            <label for="message">Message:</label>
+        </div>
+
+        <div>
+            <label>De qual lado da aplicação você desenvolve?</label>
             <br>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message here" wrap="on"></textarea>
-            <br><br>
-            <button type="submit">Send</button>
+            <label>
+                <input type="radio" name="webDev" id="front" checked>Front-end
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="webDev" id="back">Back-end
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="webDev" id="full">Fullstack
+            </label>
+        </div>
+         <br>
+
+        <div>
+            <label>Seniority</label>
+            <select id="seniority">
+                <option selected disabled value="">Select</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <fieldset>
+            <div>
+                <label>Select technologies you use:</label><br><br>
+                <input type="checkbox" name="tech1" id="tech1" value="HTML">
+                <label for="tech1">HTML</label>
+                <input type="checkbox" name="tech2" id="tech2" value="CSS">
+                <label for="tech1">CSS</label>
+                <input type="checkbox" name="tech3" id="tech3" value="JavaScript">
+                <label for="tech1">JavaScript</label>
+                <input type="checkbox" name="tech4" id="tech4" value="C#">
+                <label for="tech1">C#</label>
+                <input type="checkbox" name="tech5" id="tech5" value="Python">
+                <label for="tech1">Python</label>
+                <input type="checkbox" name="tech6" id="tech6" value="PHP">
+                <label for="tech1">PHP</label>
+                <input type="checkbox" name="tech7" id="tech7" value="Java">
+                <label for="tech1">Java</label>
+            </div>
         </fieldset>
+
+        <br>
+
+        <div>
+            <br>
+            <label for="devXP">Write about your experience as a DEV:</label>
+            <br>
+            <textarea name="devXP" id="devXP" rows="6" style="width: 26 em" placeholder="Enter your text here" wrap="on"></textarea>
+            <br><br>
+        </div>
+        
+        <button type="submit">Send</button>
+
     </form>
 
 </body>
