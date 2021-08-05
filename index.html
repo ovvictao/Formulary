@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="formulary.css" media="screen">
     <title>DEVs Cadastration Formulary</title>
 </head>
 <body>
     
     <div>
-        <h1>DEVs Cadastration Formulary</h1>
-        <p>Complete your informations</p>
+        <h1 id="title">DEVs Cadastration Formulary</h1>
+        <p id="subtitle">Complete your informations</p>
         <br>
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label for="name">Name:</label>
+        <fieldset class="group">
+            <div class="camp">
+                <label for="name"><strong>Name:</strong></label>
                 <br>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 <br><br>
             </div>
 
-            <div>
-                <label for="lastName">Last name:</label>
+            <div class="camp">
+                <label for="lastName"><strong>Last name:</strong></label>
                 <br>
-                <input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+                <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
                 <br><br>
             </div>
             
@@ -34,15 +35,15 @@
 
         <br>
 
-        <div>
-            <label for="email">E-mail:</label>
+        <div class="camp">
+            <label for="email"><strong>E-mail:</strong></label>
             <br>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
             <br><br>
         </div>
 
-        <div>
-            <label>De qual lado da aplicação você desenvolve?</label>
+        <div class="camp">
+            <label><strong>Which side of the application do you development?</strong></label>
             <br>
             <label>
                 <input type="radio" name="webDev" id="front" checked>Front-end
@@ -58,8 +59,8 @@
         </div>
          <br>
 
-        <div>
-            <label>Seniority</label>
+        <div class="camp">
+            <label for="seniority"><strong>Seniority:</strong></label>
             <select id="seniority">
                 <option selected disabled value="">Select</option>
                 <option value="junior">Junior</option>
@@ -70,9 +71,9 @@
         
         <br>
 
-        <fieldset>
-            <div>
-                <label>Select technologies you use:</label><br><br>
+        <fieldset class="group">
+            <div id="check">
+                <label><strong>Select technologies you use:</strong></label><br><br>
                 <input type="checkbox" name="tech1" id="tech1" value="HTML">
                 <label for="tech1">HTML</label>
                 <input type="checkbox" name="tech2" id="tech2" value="CSS">
@@ -92,15 +93,15 @@
 
         <br>
 
-        <div>
+        <div class="camp">
             <br>
-            <label for="devXP">Write about your experience as a DEV:</label>
+            <label for="devXP"><strong>Write about your experience as a DEV:</strong></label>
             <br>
             <textarea name="devXP" id="devXP" rows="6" style="width: 26 em" placeholder="Enter your text here" wrap="on"></textarea>
             <br><br>
         </div>
         
-        <button type="submit">Send</button>
+        <button type="submit" class="button">Send</button>
 
     </form>
 
